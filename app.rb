@@ -1,8 +1,10 @@
-#app.rb
 require 'sinatra'
+require 'holidapi'
 
 class MyWebApp < Sinatra::Base
 	get '/' do
-		erb :"index#{ rand(3) + 1 }"
+		@holidays = HolidApi.get(country: 'US', year: 1994, month: 5)
+		@current = HolidApi.get(country: 'US', year: Time.now.year, month: Time.now.month)
+		erb :index
 	end
 end
