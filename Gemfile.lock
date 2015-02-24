@@ -9,7 +9,7 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.2)
     multi_xml (0.5.5)
-    rack (1.6.0)
+    rack (1.5.2)
     rack-protection (1.5.3)
       rack
     sinatra (1.4.5)
@@ -23,4 +23,5 @@ PLATFORMS
 
 DEPENDENCIES
   holidapi
+  rack (= 1.5.2)
   sinatra (~> 1.4.5)
