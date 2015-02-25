@@ -32,8 +32,8 @@
                 <option value="<%= country %>" <%= 'selected="selected"' if params[:country] == country %>><%= country.upcase %></option>
               <% end %>
             </select>
-            <input name="year" type="number" placeholder="Enter Year">
-            <input name="month" type="number" placeholder="Enter Month">
+            <input name="year" type="number" placeholder="Enter Year" value="<%= params[:year] %>" required>
+            <input name="month" type="number" placeholder="Enter Month" value="<%= params[:month] %>" required>
             <button type="submit" id="submit">Submit</button>
           </form>
         </div>
